@@ -1,0 +1,77 @@
+{
+  "source": "Public model-ready IEEE-CIS feature parquet derived from the Kaggle/Vesta competition data",
+  "rows": 590540,
+  "features_used": 69,
+  "fraud_rate": 0.03499000914417313,
+  "train_rows": 413378,
+  "valid_rows": 88581,
+  "test_rows": 88581,
+  "baseline_logistic_valid": {
+    "roc_auc": 0.763340814455151,
+    "pr_auc": 0.22474349775788421,
+    "brier": 0.2405237011259601,
+    "log_loss": 0.6884632673240959
+  },
+  "lightgbm_raw_valid": {
+    "roc_auc": 0.9464367937824041,
+    "pr_auc": 0.6311975102103983,
+    "brier": 0.04203913833893438,
+    "log_loss": 0.15567984738626334
+  },
+  "lightgbm_calibrated_valid": {
+    "roc_auc": 0.9464367937824041,
+    "pr_auc": 0.6311975102103983,
+    "brier": 0.01917834998809504,
+    "log_loss": 0.07459130394119455
+  },
+  "lightgbm_calibrated_test": {
+    "roc_auc": 0.9331616462081649,
+    "pr_auc": 0.5727655148753688,
+    "brier": 0.021222269609624082,
+    "log_loss": 0.08317245716522802
+  },
+  "selected_validation_policy": {
+    "threshold": 0.0338487694750808,
+    "tp": 2637,
+    "fp": 10382,
+    "tn": 75157,
+    "fn": 405,
+    "recall": 0.8668639053254438,
+    "precision": 0.2025501190567632,
+    "false_positive_rate": 0.12137153812880674,
+    "expected_cost": 164056.0
+  },
+  "test_policy_at_selected_threshold": {
+    "threshold": 0.0338487694750808,
+    "tp": 2572,
+    "fp": 10721,
+    "tn": 74777,
+    "fn": 511,
+    "recall": 0.834252351605579,
+    "precision": 0.19348529301135936,
+    "false_positive_rate": 0.1253947460759316,
+    "expected_cost": 187968.0
+  },
+  "test_policy_at_0_5": {
+    "threshold": 0.5,
+    "tp": 1218,
+    "fp": 387,
+    "tn": 85111,
+    "fn": 1865,
+    "recall": 0.39506973726889394,
+    "precision": 0.7588785046728972,
+    "false_positive_rate": 0.004526421670682355,
+    "expected_cost": 376096.0
+  },
+  "expected_cost_improvement_vs_0_5": 0.5002127116480899,
+  "cost_assumptions": {
+    "fraud_miss_cost": 200.0,
+    "false_decline_cost": 8.0
+  },
+  "drift": {
+    "score_psi_valid_to_test": 0.0022687543770470026,
+    "transaction_amt_psi_valid_to_test": 0.0011779289450927464,
+    "log_amt_psi_valid_to_test": 0.0011779289450927464,
+    "hour_of_day_psi_valid_to_test": 0.0018559804655243603
+  }
+}
