@@ -1,0 +1,12 @@
+split:
+  train_fraction: 0.70
+  validation_fraction: 0.15
+model:
+  n_estimators: 500
+  learning_rate: 0.05
+  num_leaves: 31
+  random_state: 42
+policy:
+  fraud_miss_cost: 200.0
+  false_decline_cost: 8.0
+  review_threshold_multiplier: 0.60
