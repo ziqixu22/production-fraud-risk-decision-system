@@ -179,3 +179,8 @@ feature / score drift monitoring
 ## Why this is not a toy project
 
 The project emphasizes temporal leakage, rare-event evaluation, probability calibration, economics of false decisions, operational review capacity, modular pipelines, API contracts, containerization, automated tests, persisted full-data outputs, and drift monitoring—not just a leaderboard score.
+
+
+## Learn it for interviews
+
+Use the project-specific [Interview Guide](docs/INTERVIEW_GUIDE.md) for a 60-second walkthrough, key concepts, likely questions, reproducible study steps, and the honest boundary of the work.
